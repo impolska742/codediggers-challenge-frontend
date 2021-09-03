@@ -1,0 +1,16 @@
+table,
+th,
+td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+td {
+  width: 300px;
+}
+
+.nav-link:hover {
+  color: white;
+  background-color: #0d6efd;
+  transition: 0.4s all ease-in-out;
+}
