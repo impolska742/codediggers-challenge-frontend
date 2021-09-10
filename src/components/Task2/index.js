@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import axios from "axios";
 import { FaUserGraduate, FaPlusCircle } from "react-icons/fa";
 import {
+  Form,
+  FormButton,
+  FormInput,
+  FormLabel,
   User,
   UserIcon,
   UserTitle,
@@ -33,23 +37,19 @@ const Task2 = () => {
 
   return (
     <>
-      <form
-        style={{ textAlign: "center" }}
-        method="post"
-        onSubmit={handleSubmit}
-      >
-        <label>
+      <Form method="post" onSubmit={handleSubmit}>
+        <FormLabel>
           Name:{" "}
-          <input
+          <FormInput
             type="text"
             placeholder="Search user(s)"
             onChange={(e) => {
               return setQuery(e.target.value);
             }}
           />
-        </label>
-        <button onClick={handleSubmit}>Submit</button>
-      </form>
+        </FormLabel>
+        <FormButton onClick={handleSubmit}>Submit</FormButton>
+      </Form>
 
       {check && users.length < 1 ? (
         <h1 style={{ textAlign: "center", margin: "40px" }}>

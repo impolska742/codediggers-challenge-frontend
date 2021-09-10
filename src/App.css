@@ -9,6 +9,10 @@ td {
   width: 300px;
 }
 
+.nav-link {
+  font-size: 1.25rem;
+}
+
 .nav-link:hover {
   color: white;
   background-color: #0d6efd;

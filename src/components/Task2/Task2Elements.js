@@ -1,5 +1,41 @@
 import styled from "styled-components";
 
+export const Form = styled.form`
+  text-align: center;
+`;
+
+export const FormLabel = styled.label`
+  font-size: 1.5rem;
+  height: 50px;
+`;
+
+export const FormInput = styled.input`
+  font-size: 1.25rem;
+  height: 50px;
+  padding: 5px 10px;
+  border: none;
+  background: #eee;
+  border-radius: 10px 0 0 10px;
+`;
+
+export const FormButton = styled.button`
+  cursor: pointer;
+  font-size: 1.25rem;
+  transition: 0.3s all ease-in-out;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  outline: none;
+  height: 50px;
+  background-color: #1c7bfd;
+  border-radius: 0 10px 10px 0;
+
+  :hover {
+    background-color: rgba(85, 150, 241, 0.824);
+    transition: 0.3s all ease-in-out;
+  }
+`;
+
 export const User = styled.div`
   display: flex;
   flex-direction: column;
