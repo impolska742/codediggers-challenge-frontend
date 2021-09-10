@@ -2,36 +2,15 @@ import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Task1 from "./components/Task 1";
 import Task2 from "./components/Task2";
+import Task3 from "./components/Task 3";
+import { Header } from "./components/Header";
 
 function App() {
   return (
     <>
       <Router>
         <div>
-          <header className="d-flex justify-content-center py-3">
-            <ul className="nav nav-pills">
-              <li className="nav-item">
-                <a href="/" className="nav-link" aria-current="page">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="/task1" className="nav-link" aria-current="page">
-                  Task 1
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="/task2" className="nav-link">
-                  Task 2
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="#" className="nav-link">
-                  Task 3
-                </a>
-              </li>
-            </ul>
-          </header>
+          <Header />
 
           <Switch>
             <Route path="/task1">
@@ -40,7 +19,9 @@ function App() {
             <Route path="/task2">
               <Task2 />
             </Route>
-            <Route path="/task3"></Route>
+            <Route path="/task3">
+              <Task3 />
+            </Route>
           </Switch>
 
           <footer
