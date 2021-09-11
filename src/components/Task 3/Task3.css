@@ -1,0 +1,24 @@
+.user-card > p {
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.user-card {
+  border-radius: 10px;
+  border: 1px solid rgb(206, 202, 202);
+}
+
+.contest > p {
+  margin-bottom: 5px;
+}
+
+.contest {
+  border: 1px solid rgb(206, 202, 202);
+  padding: 10px 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+.bold {
+  font-weight: bold;
+}
