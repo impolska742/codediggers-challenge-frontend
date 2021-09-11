@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { FaUserGraduate, FaPlusCircle } from "react-icons/fa";
+import { FaUserGraduate } from "react-icons/fa";
 import {
   Form,
   FormButton,
